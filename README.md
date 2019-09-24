@@ -1,4 +1,4 @@
-# Keperluan Praktikum RSBK 2018 
+# Keperluan Praktikum RSBK 2019 
 > Program Studi : **S1 - Teknik Komputer** <br/>
 > [Universitas Diponegoro](https://www.undip.ac.id/language/id/ "UNDIP")
 
