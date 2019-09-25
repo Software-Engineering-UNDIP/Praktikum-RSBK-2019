@@ -3,3 +3,9 @@ Hayoo, emang ada (?)
 BELAJAR BUAT PRE TEST AJA YA : )
 
 TELAT GAK DAPAT PRE TEST LOH :3
+
+KISI-KISI Pre Test :
+1. Java Bean - Definisi dan Fungsi Umum
+2. Software Netbeans
+3. Konsep RSBK - Aturan Reuse dan Composable
+4. AWT , SWING - Komparasi
