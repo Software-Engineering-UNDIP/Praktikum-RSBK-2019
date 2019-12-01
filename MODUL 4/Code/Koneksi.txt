@@ -1,0 +1,16 @@
+ public static void main(String[] args){
+    Koneksi obj_koneksi = new Koneksi();
+    System.out.println(obj_koneksi.get_connection());
+}
+    
+public Connection get_connection(){
+   Connection connection = null;
+   
+   try {
+       Class.forName("com.mysql.cj.jdbc.Driver");
+       connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/rsbk_kelxx", "kelxx", "kelxx");
+   } catch (Exception e) {
+       System.out.println(e);
+   }
+   return connection;
+}

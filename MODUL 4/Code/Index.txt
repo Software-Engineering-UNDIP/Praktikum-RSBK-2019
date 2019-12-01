@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>JSF RSBK</title>
+    </h:head>
+    <h:body>
+        
+        <center>
+            <h2>Daftar Mahasiswa</h2>
+            <h:form>
+            <h:dataTable value="#{mahasiswa.get_all_mahasiswa}" var="maha" width="800px">
+                <h:outputText value="#{mahasiswa.NAMA}"/>
+                <h:column>
+                  <f:facet name="header">NIM</f:facet>
+                  <h:outputText value="#{maha.NIM}"></h:outputText>
+                </h:column>
+                <h:column>
+                  <f:facet name="header">Nama</f:facet>
+                 <h:outputText value="#{maha.NAMA}"></h:outputText>
+                </h:column>
+                <h:column>
+                  <f:facet name="header">Penjurusan</f:facet>
+                 <h:outputText value="#{maha.PENJURUSAN}"></h:outputText>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">Edit</f:facet>
+                    <h:commandButton value="Edit" action="#{mahasiswa.Edit_Mahasiswa}">
+                      <f:param name="action" value="#{maha.NIM}" />
+                    </h:commandButton>
+                  </h:column>
+                  <h:column>
+                    <f:facet name="header">Delete</f:facet>
+                    <h:commandButton value="Delete" action="#{mahasiswa.Delete_Mahasiswa}">
+                      <f:param name="action" value="#{maha.NIM}" />
+                    </h:commandButton>
+                  </h:column>
+            </h:dataTable>
+            <br></br>
+            </h:form>
+            <h:form>
+                <h:form>
+                Tambahkan Data Mahasiswa &nbsp;
+                <h:commandButton value="Tambahkan" action="Tambah.xhtml"></h:commandButton>
+                </h:form>
+            </h:form>
+        </center>
+    </h:body>
+</html>
+
